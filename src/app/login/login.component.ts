@@ -31,8 +31,8 @@ export class LoginComponent implements OnInit {
 	displayerror:string;
 	validtoken:boolean;
 	constructor(){
-		this.username = "testkunde@paj-gps.de";
-		this.password = "App123###...";
+		this.username = "";
+		this.password = "";
 		this.displayerror="";
 		this.validtoken=false;
 	}
