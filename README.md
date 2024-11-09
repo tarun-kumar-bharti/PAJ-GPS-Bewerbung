@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # PajGps
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.10.
@@ -29,4 +28,4 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 =======
 # PAJ-GPS-Bewerbung
 Leaflet Map integration with Angular 17 
->>>>>>> bc006c70e3efb44c5e08720d2e3295b7b24a546b
+
