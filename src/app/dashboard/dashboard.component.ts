@@ -8,8 +8,7 @@ import { Router, ActivatedRoute } from '@angular/router';
 
 import { RestService } from  '../service/rest.service'; 
 import { StorageService } from  '../service/storage.service'; 
-
-//import { MapComponent } from  '../map/map.component';
+ 
 
 declare var L:any;
 

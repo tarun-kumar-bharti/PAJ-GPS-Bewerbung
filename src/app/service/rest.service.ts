@@ -3,6 +3,8 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { HttpClientModule } from '@angular/common/http';
 import { environment } from '../../environments/environment';
 
+import { BehaviorSubject, Observable, Subject  } from 'rxjs';
+
 
 @Injectable({
   providedIn: 'root'
@@ -13,6 +15,11 @@ export class RestService {
   http = inject(HttpClient);  
   constructor(){}
  
+	public getLogin: BehaviorSubject<boolean> = new BehaviorSubject(false);
+	currentlogin = this.getLogin.asObservable();
+	public setLogin(validtoken: boolean) {	  
+		this.getLogin.next(validtoken)
+	}
 	
 	public get(url: string, data: any, options?: any) { 
 		
